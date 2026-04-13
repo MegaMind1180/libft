@@ -4,7 +4,7 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 {
 	if (!dest || !src)
 		return (NULL);
-
+	
 	unsigned char	*newdest;
 	const unsigned char	*newsrc;
 	size_t i;
