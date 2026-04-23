@@ -1,0 +1,18 @@
+#include "libft.h"
+
+void	*memchr(const void *s, int c, size_t n)
+{
+	unsigned char	a;
+	unsigned char	*str;
+	size_t	i;
+
+	if (!s)
+		return (0);
+	a = c;
+	str = s;
+	i = 0;
+	while (n != i++)
+		if (a == *str++)
+			return (str - 1);
+	return (0);
+}
