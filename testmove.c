@@ -1,12 +1,29 @@
 #include "libft.h"
-size_t ft_strlcpy(char *dst, const char *src, size_t dsize);
-size_t ft_strlen(const char *s);
+
 int main(void)
 {
-    char dest[100];
-    const char src[] = "hallo du missed";
+    t_list *ersterWert;
+    t_list *zweiterWert;
+    t_list *dritterWert;
+
+    ersterWert->i = 69;
+    zweiterWert->i = 88;
+
+    ersterWert->next = zweiterWert;
+    zweiterWert->prev = ersterWert;
+    zweiterWert->next = dritterWert;
 
 
 
-    printf("%ld", ft_strlcpy(dest, src, ft_strlen(src)));
+
+    function1(ersterWert);
+}
+
+
+
+
+
+void function1(t_list *item)
+{
+    t_list *zwei = item->next;
 }

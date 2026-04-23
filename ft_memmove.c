@@ -6,7 +6,7 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 		return (NULL);
 	
 	unsigned char	*newdest;
-	const unsigned char	*newsrc;
+	unsigned char	*newsrc;
 	size_t i;
 
 	newdest = dest;
